@@ -3,15 +3,14 @@ from typing import List, Dict
 from pydantic import BaseModel, Field
 from crewai import LLM
 from crewai.flow.flow import Flow, listen, start
-from secret import FIRECRAWL_API_KEY, OPENAI_API_KEY, SERPER_API_KEY
+from secret import initialize_api_keys
 
-import os
-os.environ['FIRECRAWL_API_KEY'] = FIRECRAWL_API_KEY
-os.environ['SERPER_API_KEY'] = SERPER_API_KEY
-os.environ['OPENAI_API_KEY'] = OPENAI_API_KEY
 
 from crew import ImmigrationCanResearchCrew
 from datetime import date
+
+initialize_api_keys()
+#initialize api key here
 
 class QueryInformation(BaseModel) :
     topic : str = Field(description='the topic of the input')
