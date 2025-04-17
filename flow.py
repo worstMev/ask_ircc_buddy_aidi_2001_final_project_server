@@ -3,11 +3,12 @@ from typing import List, Dict
 from pydantic import BaseModel, Field
 from crewai import LLM
 from crewai.flow.flow import Flow, listen, start
+from secret import FIRECRAWL_API_KEY, OPENAI_API_KEY, SERPER_API_KEY
 
 import os
-os.environ['FIRECRAWL_API_KEY'] = 'fc-d58b40a35c9d4a3096e8ea800d4f89c6'
-os.environ['SERPER_API_KEY'] = '42a1526cecd78ea0a1961fc679ff365d0fe8b4cb'
-os.environ['OPENAI_API_KEY'] = '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'
+os.environ['FIRECRAWL_API_KEY'] = FIRECRAWL_API_KEY
+os.environ['SERPER_API_KEY'] = SERPER_API_KEY
+os.environ['OPENAI_API_KEY'] = OPENAI_API_KEY
 
 from crew import ImmigrationCanResearchCrew
 from datetime import date
