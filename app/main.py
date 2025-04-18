@@ -1,6 +1,6 @@
 from fastapi import FastAPI,File, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
-from flow import kickoff 
+from flow import kickoff , plot
 from pydantic import BaseModel
 
 class Query(BaseModel):
@@ -35,3 +35,10 @@ def kickoff_crew(query : Query) :
         return result.raw
     else :
         return result
+
+@app.get('/plot')
+def plot_flow() :
+     plot()
+     return 'flow plotted';
+     
+
