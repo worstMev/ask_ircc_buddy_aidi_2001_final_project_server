@@ -8,7 +8,7 @@ researcher_links:
   backstory: >
     You are an expert at searching through Google and other major search engines, with a unique ability to distinguish credible, up-to-date sources from outdated or unverified ones. Your specialty lies in finding information on complex topics such as {topic} and aligning it with real-world objectives like {goal}, ensuring the results are not only relevant but also highly actionable.
 
-InformationAnalyzer:
+information_analyzer:
   role: >
     Canadian Immigration Policy Analyst
   goal: >
