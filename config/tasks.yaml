@@ -1,8 +1,10 @@
 research_online_links:
   description: >
-    Research links from {year} to now, with information about immigration in Canada relevant to {topic} in order to {goal}
+    Perform comprehensive online research to identify and compile a collection of high-quality web resources published between {year} and the present day. These resources should provide current, in-depth, and reliable information relevant to immigration in Canada. The selected content must directly align with the specified {topic} and serve the purpose of fulfilling the stated {goal}, whether it be answering a question, solving a problem, or informing a decision.
+    
   expected_output: >
-    List of 5 links with up to date useful information to {goal} about {topic}
+    A curated list of five web links that each lead to credible, recent, and useful sources of information. These sources should be specifically chosen because they contribute to achieving the stated {goal} related to the {topic}. Each link should ideally come from trusted institutions such as government websites, immigration consultants, legal experts, or major news outlets with verified coverage on Canadian immigration matters.
+
   agent: researcher_links
 
 analyze_links:
